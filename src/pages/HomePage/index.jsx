@@ -10,7 +10,6 @@ export const HomePage = () => {
       const response = await fetch('http://localhost:4000/api/jokes');
       const data = await response.json();
       setJokes(data.result);
-      console.log(data.result);
     };
 
     handleFetch();

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './style.css';
 
-export const JokeLikes = () => {
-  const [upLikes, setUpLikes] = useState(0);
-  const [downLikes, setDownLikes] = useState(0);
+export const JokeLikes = ({ likes, dislikes }) => {
+  const [upLikes, setUpLikes] = useState(likes);
+  const [downLikes, setDownLikes] = useState(dislikes);
 
   const handleButtonUp = () => {
     setUpLikes(upLikes + 1);
